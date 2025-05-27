@@ -19,7 +19,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "SoampliApps\\Dao": "src/"
+            "SoampliApps\\Dao\\": "src/"
         }
     }
 }
