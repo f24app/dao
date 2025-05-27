@@ -1,7 +1,7 @@
 <?php
 namespace SoampliApps\Dao;
 
-interface DAOInterface
+interface DaoInterface
 {
     /**
      * Data Access Object constructor

@@ -23,7 +23,7 @@ abstract class AbstractModel implements ModelInterface, MagicModelInterface
         $this->container = $container;
         $this->dao = $container['data_access_objects'][$this->daoContainerKey];
 
-        if ($this->dao instanceof DAOInterface) {
+        if ($this->dao instanceof DaoInterface) {
             if (!is_null($unique_reference)) {
                 try {
                     $this->dao->createFromUniqueReference($unique_reference, $this);
@@ -35,7 +35,7 @@ abstract class AbstractModel implements ModelInterface, MagicModelInterface
                 }
             }
         } else {
-            throw new \RuntimeException("Container injected DAO does not implement DAOInterface");
+            throw new \RuntimeException("Container injected DAO does not implement DaoInterface");
         }
     }
 
