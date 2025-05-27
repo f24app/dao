@@ -1,0 +1,25 @@
+{
+    "name": "soampliapps/dao",
+    "type": "library",
+    "description": "A data access object framework, with PDO support out of the box",
+    "keywords": [
+        "dao",
+        "data access object",
+        "pdo"
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "authors": [
+        {
+            "name": "IDS",
+            "email": "waseemids369@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SoampliApps\\Dao": "src/"
+        }
+    }
+}
