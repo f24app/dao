@@ -169,7 +169,7 @@ abstract class AbstractModel implements ModelInterface, MagicModelInterface
             $this->properties[$key] = $value;
         }
 
-        return $model;
+        return $this->properties;
     }
 
     public function partiallyHydrate($data)
